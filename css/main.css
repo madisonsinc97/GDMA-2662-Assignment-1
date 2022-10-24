@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------
+    TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+        - Universal
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, 
+building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Navigation
+        - Header
+        - Flexbox
+        - Axis
+        - Container
+        - Items
+        - Footer
+        _ Hero
+7.0 - Utilities: utilities and helper classes with ability to override anything 
+which goes before in the triangle, eg. hide helper class
+        - Color     
+--------------------------------------------------------------*/                  
+/*--------------------------------------------------------------                  
+   3.0 - GENERIC                                                                  
+-------------------------------------------------------------- */                 
+/* ----- UNIVERSAL ----- */
+
+
+/*--------------------------------------------------------------
+   4.0 - ELEMENTS
+-------------------------------------------------------------- */
+
+
+/* ----- TYPOGRAPHY ----- */
+
+
+
+/*--------------------------------------------------------------
+   5.0 - OBJECTS
+-------------------------------------------------------------- */
+
+/* ----- FRAMEWORK ----- */
+
+
+/*--------------------------------------------------------------
+   5.0 - COMPONENTS
+-------------------------------------------------------------- */
+
+
+
+/* ----- NAV ----- */
+
+
+/* ----- HEADER ----- */
+
+
+/* ----- FLEXBOX ----- */
+
+
+/* ----- AXIS ----- */
+
+
+
+/* ----- CONTAINER ----- */
+
+
+
+/* ----- ITEMS ----- */
+
+
+
+/* ----- FOOTER ----- */
+
+
+
+/* ----- HERO ----- */
+
+
+
+/*--------------------------------------------------------------
+   7.0 - UTILITY
+-------------------------------------------------------------- */
+
+/* ----- COLOR ----- */
+
