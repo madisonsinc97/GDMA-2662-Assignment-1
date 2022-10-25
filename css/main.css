@@ -30,52 +30,134 @@ which goes before in the triangle, eg. hide helper class
 /* ----- UNIVERSAL ----- */
 
 
+
 /*--------------------------------------------------------------
    4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
 body header span,
-header div:first-child p {
+header > div:first-child p,
+header > div:last-child p {
         font: 18px 'Source Sans Pro', sans-serif;
 }
 
 body header span,
-header div:first-child p,
-header div:first-child a {
+header > div:first-child p,
+header > div:first-child a {
         color: #3F3C45;
+}
+
+body header span,
+header nav a,
+#awesome-hosting {
+        font-weight: 700;
+}
+
+header nav a,
+header > div:last-child p,
+h1,
+main > section:first-child a {
+        text-transform: uppercase;
+}
+
+header nav a,
+header > div:last-child p,
+main > section:first-child a {
+        color: #FFFFFF;
+}
+
+header nav a,
+main > section:first-child a {
+        font-family: 'Lato';
+        font-size: 16px;
+        line-height: 19px;
+        background-color: #FE8360;
+        padding: 15px 20px;
+}
+
+main p,
+main li {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #000000;
 }
 
 /* ----- TYPOGRAPHY ----- */
 
 body header span {
-        font-weight: 700;
         line-height: 23px;
 }
 
 header div:first-child p {
-        font-weight: 400;
         line-height: 26px;
 }
 
-header a {
-        text-decoration: none;
+header .row p {
+        text-align: right;
+        margin-bottom: 27px;
 }
 
-header li {
-        list-style-type: none;
+header > div:last-child p {
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 38px;
 }
 
-header nav a {
-        font-family: 'Lato';
+#awesome-hosting {
+        font-size: 50px;
+        line-height: 63px;
+}
+
+h1 {
+        font-family: 'Source Sans Pro', sans-serif;
         font-weight: 700;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 35px;
+        line-height: 44px;
+        color: #3F3C45;
+}
+
+h1 span {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 23px;
+}
+
+.fa-solid {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 50px;
+        color: #FE8360;
+}
+
+h2 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #3F3C45;
+        margin: 72px 0 5px 0;
+}
+
+h3 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
         text-transform: uppercase;
         color: #FFFFFF;
-        background-color: #FE8360;
-        padding: 15px 20px;
 }
 
+footer > section:first-child a {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;      
+        color: #B6BCC7;
+}
 
 /*--------------------------------------------------------------
    5.0 - OBJECTS
@@ -96,6 +178,32 @@ header nav a {
    5.0 - COMPONENTS
 -------------------------------------------------------------- */
 
+header a,
+main > section:first-child a,
+footer a {
+        text-decoration: none;
+}
+
+header > div:last-child h1,
+header > div:last-child p,
+main p,
+main > section:first-child li {
+        margin: 0;
+}
+
+.fa-compass-drafting,
+.fa-pen-to-square,
+.fa-champagne-glasses {
+        position: relative;
+        top: 75px;
+        margin-right: 20px;
+}
+
+.fa-pen-to-square,
+.fa-champagne-glasses {
+        margin-left: 20px;
+}
+
 /* ----- HERO ----- */
 
 header > div:last-child {
@@ -108,14 +216,20 @@ header > div:last-child {
         width: 100vw;
 }
 
+body header .row {
+        display: flex;
+        justify-content: space-between;
+}
+
+header > div:last-child .wrapper {
+        text-align: center;
+        padding: 255px 0 115px 0;
+}
 
 /* ----- NAV ----- */
 
-header a {
-        text-decoration: none;
-}
-
-header li {
+header li,
+footer li {
         list-style-type: none;
 }
 
@@ -123,11 +237,50 @@ header nav li {
         display: inline;
 }
 
-/* ----- HEADER ----- */
+/* ----- HOME ----- */
 
+main > section:first-child > div:first-child {
+        width: 640px;
+        float: left;
+}
 
-/* ----- FLEXBOX ----- */
+h1 {
+        margin: 81px 0 14px 0;
+}
 
+main > section:first-child > div:last-child {
+        background: url("../img/woman-typing.jpg") no-repeat;
+        -moz-backround-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        margin: 0 auto;
+        width: 409px;
+        background-position: center bottom -170px;
+        float: right;
+}
+
+main > section:first-child ul {
+        margin-bottom: 26px;
+}
+
+.fa-certificate {
+        position: relative;
+        top: 115px;
+        left: -25px;
+}
+
+.row section > div:last-child {
+        width: 310px;
+        margin: 0 0 63px 0;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+        background-color: #4D515C;
+}
 
 /* ----- AXIS ----- */
 
