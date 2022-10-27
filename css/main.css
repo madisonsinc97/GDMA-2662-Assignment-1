@@ -49,7 +49,7 @@ header > div:first-child a {
 
 body header span,
 header nav a,
-#awesome-hosting {
+#bold {
         font-weight: 700;
 }
 
@@ -60,19 +60,26 @@ main > section:first-child a {
         text-transform: uppercase;
 }
 
-header nav a,
+header .wrapper nav a,
 header > div:last-child p,
 main > section:first-child a {
         color: #FFFFFF;
 }
 
-header nav a,
+header .wrapper nav a,
 main > section:first-child a {
         font-family: 'Lato';
         font-size: 16px;
         line-height: 19px;
         background-color: #FE8360;
-        padding: 15px 20px;
+        /* padding: 15px 20px; */
+        padding: 17px 20px;
+}
+
+header .wrapper nav a:hover,
+main > section:first-child a:hover {
+        background-color: #51CCF6;
+        color: #FFFFFF;
 }
 
 main p,
@@ -84,6 +91,11 @@ main li {
         color: #000000;
 }
 
+footer a,
+footer address li {
+        font-size: 14px;
+        line-height: 22px;
+}
 /* ----- TYPOGRAPHY ----- */
 
 body header span {
@@ -105,7 +117,11 @@ header > div:last-child p {
         line-height: 38px;
 }
 
-#awesome-hosting {
+header > div:first-child a:hover {
+        color: #FE8360;
+}
+
+#bold {
         font-size: 50px;
         line-height: 63px;
 }
@@ -150,14 +166,23 @@ h3 {
         color: #FFFFFF;
 }
 
-footer > section:first-child a {
+footer a {
         font-family: 'Source Sans Pro', sans-serif;
-        font-style: normal;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;      
-        color: #B6BCC7;
+        color: #B6BCC7;     
 }
+
+footer a:hover {
+        color: #FFFFFF;
+}
+
+footer address li {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+        color: #FFFFFF;
+        font-style: normal;
+}
+
 
 /*--------------------------------------------------------------
    5.0 - OBJECTS
@@ -193,20 +218,41 @@ main > section:first-child li {
 
 .fa-compass-drafting,
 .fa-pen-to-square,
-.fa-champagne-glasses {
+.fa-champagne-glasses,
+.fa-cloud,
+.fa-comment,
+.fa-laptop,
+.fa-gear,
+.fa-envelope,
+.fa-lock {
         position: relative;
         top: 75px;
         margin-right: 20px;
 }
 
 .fa-pen-to-square,
-.fa-champagne-glasses {
+.fa-champagne-glasses,
+.fa-comment,
+.fa-laptop,
+.fa-envelope,
+.fa-lock {
         margin-left: 20px;
+}
+
+header li,
+footer li {
+        list-style-type: none;
+}
+
+#blue div,
+#orange div {
+        text-align: left;
+        padding: 116px 0 51px 0;
 }
 
 /* ----- HERO ----- */
 
-header > div:last-child {
+#img {
         background: url("../img/computer-glowing.jpg") no-repeat center;
         -moz-backround-size: cover;
         -webkit-background-size: cover;
@@ -227,11 +273,6 @@ header > div:last-child .wrapper {
 }
 
 /* ----- NAV ----- */
-
-header li,
-footer li {
-        list-style-type: none;
-}
 
 header nav li {
         display: inline;
@@ -276,10 +317,47 @@ main > section:first-child ul {
         margin: 0 0 63px 0;
 }
 
+/* ----- BENEFITS ----- */
+
+#blue {
+        background-color: #51CCF8;
+}
+
+/* main > div:last-child h2 {
+        margin-top: 0;
+} */
+
+/* ----- HOSTING ----- */
+
+#orange {
+        background-color: #FE8360;
+}
+
 /* ----- FOOTER ----- */
 
 footer {
         background-color: #4D515C;
+}
+
+footer > section:last-child  {
+        display: inline;
+}
+
+footer ul {
+        padding-left: 0;
+}
+
+.wrapper > section:last-child ul {
+        display: flex;
+        justify-content: space-between;
+}
+
+footer div > section:first-child {
+        margin-right: 70px;
+}
+
+footer div > section:nth-child(2) {
+        margin-right: 50px;
 }
 
 /* ----- AXIS ----- */
