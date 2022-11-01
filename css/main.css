@@ -26,6 +26,9 @@ which goes before in the triangle, eg. hide helper class
 -------------------------------------------------------------- */                 
 /* ----- UNIVERSAL ----- */
 
+* {
+        font-family: 'Source Sans Pro', sans-serif;
+}
 
 /*--------------------------------------------------------------
    4.0 - ELEMENTS
@@ -34,62 +37,75 @@ which goes before in the triangle, eg. hide helper class
 body header span,
 header > div:first-child p,
 header > div:last-child p,
-main p,
-main li,
-h2,
-h3,
-h4,
-footer a,
-footer address li,
-th,
-thead tr th,
-thead a,
-tbody td,
-tfoot a,
-#hosting main p a {
-        font-family: 'Source Sans Pro', sans-serif;
-}
-
-body header span,
-header > div:first-child p,
-header > div:last-child p,
-h3,
-h4 {
+#home h3,
+#benefits h2,
+#home h4,
+#hosting h2,
+#benefits h3,
+#hosting main p,
+#home h2,
+#benefits h1,
+#hosting h1 {
         font-size: 18px;
 }
 
 body header span,
 header > div:first-child p,
 header > div:first-child a,
-h2,
-h3,
+#home h3,
+#benefits h2,
 th,
 thead tr th,
-tbody td {
+tbody td,
+#hosting main p,
+#hosting main p span,
+#home h2,
+#benefits h1,
+#hosting h1,
+#home h2 span {
         color: #3F3C45;
 }
 
-body header span,
+body header .row > div:nth-child(2) span,
 header nav a,
-h2,
-h3,
-h4,
+#home h3,
+#benefits h2,
+#home h4,
+#hosting h2,
+#benefits h3,
 thead a,
 tfoot a,
-#hosting main p a {
+#hosting main p a,
+#hosting main p span,
+#home h2 span,
+#benefits h1 span,
+#hosting h1 span,
+th span {
         font-weight: 700;
 }
 
 header nav a,
 header > div:last-child p,
-h2,
 main > section:first-child a,
-h3,
-h4,
+#home h3,
+#benefits h2,
+#home h4,
+#hosting h2,
+#benefits h3,
 thead tr th,
 thead a,
 tfoot a,
-#hosting main p a {
+#hosting main p a,
+#hosting main p,
+#hosting main p span,
+#home h2,
+#benefits h1,
+#hosting h1,
+#home h2 span,
+#benefits h1,
+#hosting h1,
+#benefits h1 span,
+#hosting h1 span {
         text-transform: uppercase;
 }
 
@@ -99,12 +115,18 @@ header > div:last-child span,
 main > section:first-child a,
 header .wrapper nav a:hover,
 main > section:first-child a:hover,
-h4,
+#home h4,
+#hosting h2,
+#benefits h3,
 footer a:hover,
 footer address li,
 thead a,
 tfoot a,
-#hosting main p a {
+#hosting main p a,
+#benefits h1,
+#hosting h1,
+#benefits h1 span,
+#hosting h1 span  {
         color: #FFFFFF;
 }
 
@@ -120,27 +142,19 @@ tfoot a,
 }
 
 header .wrapper nav a,
-main > section:first-child a, 
-tfoot a,
-#hosting main p a {
-        background-color: #FE8360;
-}
-
-header .wrapper nav a,
 main > section:first-child a {
         font-family: 'Lato';
         line-height: 19px;
 }
 
-header .wrapper nav a:hover,
-main > section:first-child a:hover,
-thead a {
-        background-color: #51CCF6;
-}
-
 footer a,
 main p,
-main li {
+main li,
+thead tr th,
+tbody td,
+#year,
+#extension,
+#domain-name {
         font-weight: 400;
 }
 
@@ -155,16 +169,28 @@ main li {
         color: #000000;
 }
 
+#year,
+#extension,
+#domain-name
 footer a,
 footer address li {
         font-size: 14px;
-        line-height: 22px;
 }
 
+footer a,
+footer address li,
 body header span,
-h3,
-h4 {
-        line-height: 23px;
+#home h3,
+#benefits h2,
+#home h4,
+#hosting h2,
+#benefits h3,
+header > div:last-child span
+#hosting main p,
+#home h2,
+#benefits h1,
+#hosting h1 {
+        line-height: 22px;
 }
 
 header > div:first-child p a:hover,
@@ -172,50 +198,57 @@ header > div:first-child p a:hover,
         color: #FE8360;
 }
 
-#benefits h2 span,
-#hosting h2 span {
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 63px;
-}
-
-#benefits h2,
-#hosting h2 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 300;
-        font-size: 30px;
-        line-height: 38px;
-        text-transform: uppercase;
-        color: #FFFFFF;
-}
-
+thead a,
 tfoot a,
 #hosting main p a {
         line-height: 20px;     
+}
+
+tfoot a,
+#hosting main p a {    
         padding: 15px 72.5px;
-        text-decoration: none;
 }
 
+header > div:last-child span
+#hosting main p,
 #home h2,
-#hosting main p {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-style: normal;
+#benefits h1,
+#hosting h1,
+#benefits h1,
+#hosting h1,
+body header span {
         font-weight: 300;
-        font-size: 18px;
-        line-height: 23px;
-        text-transform: uppercase;
-        color: #3F3C45;
 }
 
-#home h2 span,
-#hosting main p span {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 35px;
-        line-height: 44px;
-        text-transform: uppercase;
-        color: #3F3C45;
+#year,
+#extension,
+#domain-name {
+        line-height: 15px;
+        border: 1px solid #3F3C45;
+}
+
+#year:hover,
+#extension:hover,
+#domain-name:hover {
+        border: 1px solid #FE8360;
+}
+
+#domain-name,
+#year {
+        margin-right: 20px;
+}
+
+#benefits h1,
+#hosting h1 {
+        font-size: 30px;
+        line-height: 38px;
+        padding: 116px 0 51px 0;
+}
+
+#benefits h1 span,
+#hosting h1 span {
+        font-size: 50px;
+        line-height: 63px;
 }
 
 /* ----- TYPOGRAPHY ----- */
@@ -226,25 +259,23 @@ header div:first-child p {
 }
 
 header > div:last-child span {
-        font-weight: 300;
         font-size: 30px;
         line-height: 38px;
 }
 
 header > div:last-child p {
         font-size: 50px;
-        line-height: 63px;
+        line-height: 38px;
 }
 
-h2 {
+#home h2 span {
         font-size: 35px;
-        line-height: 44px;
+        line-height: 30px;
 }
 
-h2 span {
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 23px;
+#hosting main p span {
+        font-size: 35px;
+        line-height: 30px;
 }
 
 .fa-solid {
@@ -259,27 +290,24 @@ thead > tr:first-child th {
         line-height: 94px;
 }
 
-th span {
-        font-weight: 700;
-}
-
 thead tr th {
-        font-weight: 400;
         font-size: 25px;
         line-height: 36px;
 }
 
 thead a {
-        line-height: 20px;
-        text-decoration: none;
         padding: 10px 57px;
 }
 
 tbody td {
-        font-weight: 400;
         border-bottom: 1px solid #E0DFE1;
         text-align: center;
 }
+
+tfoot td {
+        text-align: center;
+}
+
 
 /*--------------------------------------------------------------
    5.0 - OBJECTS
@@ -307,7 +335,10 @@ main > section:first-child a {
 
 header a,
 main > section:first-child a,
-footer a {
+footer a,
+thead a
+tfoot a,
+#hosting main p a {
         text-decoration: none;
 }
 
@@ -358,23 +389,39 @@ footer li {
         top: 5px;
 }
 
-#home > div section,
-#benefits main > div section {
-        width: 400px;
-        margin: 0 auto;
+header .wrapper nav a,
+main > section:first-child a, 
+tfoot a,
+#hosting main p a,
+header nav ul,
+thead a:hover,
+#bg-orange {
+        background-color: #FE8360;
+}
+
+header .wrapper nav a:hover,
+main > section:first-child a:hover,
+thead a {
+        background-color: #51CCF6;
+}
+
+tbody > tr:nth-child(2) td,
+tbody > tr:nth-child(3) td,
+tbody > tr:nth-child(4) td {
+        padding: 13px;
+}
+
+th, 
+td {
+        width: 256px;
+}
+
+#domain-name,
+#year {
+        margin-right: 20px;
 }
 
 /* ----- HERO ----- */
-
-#img {
-        background: url("../img/computer-glowing.jpg") no-repeat center;
-        -moz-backround-size: cover;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-        -ms-background-size: cover;
-        background-size: cover;
-        width: 100vw;
-}
 
 body header .row {
         display: flex;
@@ -402,30 +449,38 @@ header nav a {
 }
 
 header nav ul {
-        background-color: #FE8360;
         margin-bottom: 0;
         padding: 0;
 }
 
-thead a:hover {
-        background-color: #FE8360;
-}
-
-tfoot a:hover {
+tfoot a:hover,
+#hosting .row a:hover,
+#bg-blue {
         background-color: #51CCF8;
 }
+
 /* ----- HOME ----- */
+
+#img {
+        background: url("../img/computer-glowing.jpg") no-repeat center;
+        -moz-backround-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        width: 100vw;
+}
 
 main > section:first-child > div:first-child {
         width: 640px;
-        float: left;
+        justify-content: left ;
 }
 
-h2 {
+#home h2 {
         margin: 81px 0 14px 0;
 }
 
-#home > section:first-child > div:last-child {
+#home main > section:first-child > div:last-child {
         background: url("../img/woman-typing.jpg") no-repeat;
         -moz-backround-size: cover;
         -webkit-background-size: cover;
@@ -435,45 +490,53 @@ h2 {
         margin: 0 auto;
         width: 409px;
         background-position: center bottom -170px;
-        float: right;
+        justify-content: right;
 }
 
 main > section:first-child ul {
         margin-bottom: 26px;
 }
 
-h3 {
+#home h3,
+#benefits h2 {
         margin: 72px 0 5px 0;
 }
 
 .fa-certificate {
         position: relative;
-        top: 115px;
+        top: 66px;
         left: -25px;
 }
 
 .row section > div:last-child {
-        width: 310px;
         margin: 0 0 63px 0;
 }
 
-/* ----- BENEFITS ----- */
-
-#bg-blue {
-        background-color: #51CCF8;
-}
-
-#benefits main > div:nth-child(2) h3 {
+#home ul {
         margin-top: 0;
 }
-/* ----- HOSTING ----- */
 
-#bg-orange {
-        background-color: #FE8360;
+#home main > div section {
+        width: 350px;
 }
+
+
+/* ----- BENEFITS ----- */
+
+#benefits main > div:nth-child(2) h2 {
+        margin-top: 0;
+}
+
+#benefits main section {
+        width: 350px;
+}
+
+/* ----- HOSTING ----- */
 
 #bg-grey {
         background-color: #E7F5F8;
+        width: 100vw;
+        margin-bottom: 72px;
 }
 
 table {
@@ -485,12 +548,73 @@ td {
         border-right: 1px solid #E0DFE1;
 }
 
-label {
-        display: none;
-}
 
 #hosting .fa-magnifying-glass {
         font-size: 20px;
+}
+
+thead > tr:first-child th {
+        padding-top: 24px;
+}
+
+thead > tr:nth-child(2) th {
+        padding-bottom: 17px;
+}
+
+thead > tr:nth-child(3) th {
+        padding-bottom: 49px;
+}
+
+tbody > tr:first-child td {
+        padding-bottom: 13px;
+}
+
+tbody > tr:nth-child(5) td {
+        padding-top: 13px;
+}
+
+tfoot td {
+        padding: 50px 0 35px 0;
+}
+
+#hosting footer {
+        margin-top: 72px;
+}
+
+tbody > tr:last-child td {
+        border-bottom: none;
+}
+
+tbody tr > td:last-child,
+thead tr > th:last-child,
+tfoot tr > td:last-child {
+        border-right: none;
+}
+
+#hosting main .row {
+        display: flex;
+        justify-content: space-between;
+}
+
+#hosting main .row > div:first-child {
+        padding: 47px 0 62px 0;
+}
+
+form {
+        padding-top: 99px;
+}
+
+#hosting .row > p {
+        padding-top: 114px;
+}
+
+#domain-name {
+        padding: 17px 164px 17px 11px;
+}
+
+#year,
+#extension {
+        padding: 15px 68px 15px 11px;
 }
 
 /* ----- FOOTER ----- */
@@ -514,10 +638,15 @@ footer ul {
 
 footer section:first-child {
         margin-right: 70px;
+        margin-bottom: 49px;
 }
 
 footer section:nth-child(2) {
         margin-right: 50px;
+}
+
+footer section {
+        margin-top: 38px;
 }
 
 footer a {
@@ -528,5 +657,6 @@ footer address li {
         font-weight: 600;
         font-style: normal;
 }
+
 
 
